@@ -1,8 +1,9 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv, find_dotenv
-# from langchain.chat_models import ChatOpenAI
-from langchain_openai import ChatOpenAI
+from langchain.chat_models import ChatOpenAI
+# from langchain_openai import ChatOpenAI
+
 
 _ = load_dotenv(find_dotenv()) # read local .env file
 client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
@@ -30,6 +31,6 @@ that is delimited by triple backticks
 into a style that is {style}.
 text: ```{customer_email}```
 """
-chat = ChatOpenAI(temperature=0.0,model="gpt-3.5-turbo")
-print(chat)
-# print(get_completion(prompt))
+# chat = ChatOpenAI(temperature=0.0,model="gpt-3.5-turbo")
+# print(chat)
+print(get_completion(prompt))
