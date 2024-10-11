@@ -1,3 +1,6 @@
 .env
 # Ignore the virtual environment directory inside the app folder
 app/.venv/
+app/__pycache__/
+app/create/
+app/env/
